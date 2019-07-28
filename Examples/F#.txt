@@ -1,0 +1,219 @@
+\\Factorial
+let rec fact n =
+  if n <= 1 then 1
+  else n * fact(n-1)
+
+let rec sn n = 
+  if n = 1 then 1
+  else fact (n) + sn (n-1)
+//
+//  распаковка/упаковка списка
+// упаковка
+// > pack [1;1;2;3;3;3;4;4];;
+// >[(2,1);(1,2);(3,3);(2,4)]
+
+(*
+let pack lst = 
+    let tmpLst = []
+    let iter lst i =
+        while(lst
+        while(i = List.length) do
+              
+              i = i + 1
+              List.iter
+              *)
+(*
+let pack lst =
+    List.sort lst
+    let rec iter lst i s =
+        match lst with
+              | head::tail -> 
+              *)
+let rec get i lst = 
+        if i = 1 then List.head lst
+                           else get (i - 1) (List.tail lst)
+// a - текущий элемент
+// b - количество текущих элементов
+(*
+let pack lst = 
+    let rec iter lst i a b =
+       a = List.head lst
+       lst = List.tail
+       while(i = List.length lst) do
+            if a = get i lst then
+                    b = b + 1
+                    (b, a) :: tmpLst
+                    i = i + 1
+            else tmpLst
+
+    let tmpLst = []
+    List.sort lst
+    *)
+// берем голову списка, фильтруем и создаем новый список, создаем кортеж с длиной
+let pack lst = 
+    let rec tumb lst tmpLst1 = 
+        match lst with
+        | [] -> List.rev tmpLst1
+        | head::tail ->                                                
+                        tumb (List.filter(fun i -> i <> head) lst) ((List.length (List.filter(fun i -> i = head) lst), head)::tmpLst1)
+    tumb lst []
+
+let getfirst tpl =
+  fst tpl
+
+let rec add tpl tmp =
+        if fst tpl = 0 then 
+           tmp   
+        else add ((fst tpl) - 1, (snd tpl)) ((snd tpl)::tmp)
+    
+let unpack lst =
+    let rec add tpl tmp =
+        if fst tpl = 0 then 
+           tmp   
+        else add ((fst tpl) - 1, (snd tpl)) ((snd tpl)::tmp)
+
+    let rec untumb lst tmpLst =                             
+        match lst with
+        | [] -> List.rev tmpLst
+        | head::tail -> 
+                        untumb tail (add head tmpLst)
+    untumb lst []
+
+let repl lst number = 
+    let rec add el number tmpLst =
+        if number = 0 then tmpLst
+        else add el (number - 1) (el::tmpLst)
+
+    let rec iter lst number tmpLst = 
+        match lst with
+        | [] -> List. rev tmpLst
+        | head::tail -> iter tail number (add head number tmpLst)
+
+    iter lst number []
+//
+//конвееры |>
+(*
+let f x = x*x
+let g x = -x
+let h x = x**2.0
+
+let p x = f>>g>>h
+*)
+
+//кортежи 
+let a = ("Hello", "Bye", 124)
+//доступ до элем кортежа
+let name, somename, number = a
+
+let b = ("Hello", ("Bye", 124))
+
+// fst b
+// snd b
+
+// struct
+
+(*
+type Person = 
+    Name of string
+    |   Surname of string
+    |   Age of int
+*)
+type Person = { 
+            Name : string; 
+            SurName : string; 
+            Age : int;
+            }
+
+type vec = {
+            x:float
+            y:float
+            z:float
+            }
+            member this.Len = sqrt <| this.x ** 2.0 + this.y ** 2.0 + this.z ** 2.0
+
+// ленивые вычислени€ (leasy)
+let m = seq {1..100000}
+
+
+open System
+let rndSeq = seq {
+                  let rnd = new Random()
+                  while (true) do
+                  yield rnd.Next()
+                  }
+
+// экспонента  
+let rec fact n = 
+            if n = 0.0 then 
+              1.0
+            else
+              n * fact(n - 1.0)
+let e x n = 
+            let tmpSeq = seq {for i in 0..10000000 -> (x**float(i))/(fact (float(i)))};
+            let tmpLst = tmpSeq |> Seq.take n;
+            tmpLst |> Seq.reduce (fun i el -> i + el) 
+
+let fib n = 
+          let rec iter m k i =
+                             if (n + 1) > i then
+                                iter k (k + m) (i + 1)
+                             else 
+                                k
+          iter 0 1 1
+
+
+
+// ========распаковка/упаковка списка========//
+// 1. упаковка списка                        //
+// > pack [1;1;2;3;3;3;4;4]                   //
+// > [(2,1);(1,2);(3,3);(2,4)]               //
+// 2. распаковка                             //
+// > unpack [(3,8);(4,7)]                     //
+// > [8;8;8;7;7;7;7]                         //
+// 3. репликаци€                             //
+// > repl [2;3;4] 2                            //
+// > [2;2;3;3;4;4]                           //
+// =================the end==================//
+
+
+let pack lst =
+    let listik = []
+    let rec tmb lst lst2 =  
+        match lst with
+         | [] -> List.rev lst2
+         | head::tail -> tmb (List.filter(fun i -> i <> head) lst) ((List.length (List.filter(fun i -> i = head) lst), head)::lst2)
+    tmb lst listik
+
+let unpack lst =
+    let listik = []
+    let rec untmb lst lst2 =
+        let rec add lst i j =
+            match i with
+             | _ when i = 0 -> lst
+             | _ when i > 0 -> add (j::lst) (i - 1)  j             
+        match lst with
+         | [] -> lst2
+         | head::tail -> (untmb tail (add lst2 (fst head) (snd head)))
+    untmb lst listik
+
+
+let repl lst x =
+    let listik = lst
+    let rec iter lst i =
+        let rec add lst lst2=
+            match lst2 with
+             | [] -> lst
+             | head::tail -> add (head::lst) tail
+        if i > 1 then iter (add lst listik) (i - 1)
+                  else List.sort lst
+    iter lst x
+	
+//–азмер файла
+module FileFolder =
+    let getSize folder =
+        let getFiles folder =
+            Directory.GetFiles(folder, "**", SearchOption.AllDirectories)    
+        getFiles folder
+        |> Array.map(fun file -> new FileInfo(file))
+        |> Array.map(fun info -> info.Length)
+        |> Array.sum

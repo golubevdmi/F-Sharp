@@ -1,0 +1,195 @@
+module proba =
+    let rec fib n =
+        match n with
+        | 1 |  2 -> 1
+        | _ -> fib(n - 1) + fib(n - 2)
+		
+//конвееры |>
+(*
+let f x = x*x
+let g x = -x
+let h x = x**2.0
+
+let p x = f>>g>>h
+*)
+
+//кортежи 
+let a = ("Hello", "Bye", 124)
+//доступ до элем кортежа
+let name, somename, number = a
+
+let b = ("Hello", ("Bye", 124))
+
+// fst b
+// snd b
+
+// struct
+
+(*
+type Person = 
+    Name of string
+    |   Surname of string
+    |   Age of int
+*)
+type Person = { 
+            Name : string; 
+            SurName : string; 
+            Age : int;
+            }
+
+type vec = {
+            x:float
+            y:float
+            z:float
+            }
+            member this.Len = sqrt <| this.x ** 2.0 + this.y ** 2.0 + this.z ** 2.0
+
+// ленивые вычисления (leasy)
+let m = seq {1..100000}
+
+
+open System
+let rndSeq = seq {
+                  let rnd = new Random()
+                  while (true) do
+                  yield rnd.Next()
+                  }
+
+// экспонента  
+let rec fact n = 
+            if n = 0.0 then 
+              1.0
+            else
+              n * fact(n - 1.0)
+let e x n = 
+            let tmpSeq = seq {for i in 0..10000000 -> (x**float(i))/(fact (float(i)))};
+            let tmpLst = tmpSeq |> Seq.take n;
+            tmpLst |> Seq.reduce (fun i el -> i + el) 
+
+let fib n = 
+          let rec iter m k i =
+                             if (n + 1) > i then
+                                iter k (k + m) (i + 1)
+                             else 
+                                k
+          iter 0 1 1
+
+
+
+// Упаковка списка
+//1     pack [1;1;2;3;3;3;4;4]        //[(2,1], [1,2], [3,3], [2,4]]
+let pack lst = 
+    let listik = []
+    let rec tmb lst lst2 = 
+        match lst with
+        |[] -> List.rev lst2
+        |head::tail 
+            -> tmb (List.filter(fun i -> i <> head) lst) ((List.length(List.filter(fun i -> i = head) lst), head)::lst2)
+    tmb lst listik
+
+//2     //Распаковка[(3;8);(4,7)]       //[8;8;8;7;7;7;7]
+let unpack lst =
+    let listik = []
+    let rec untmb lst lst2 = 
+        let rec add lst i j =
+            match i with
+                | _ when i = 0 -> lst
+                | _ when i > 0 -> add(j::lst) (i - 1) j
+        match lst with
+            |[] -> lst2
+            |head::tail -> (untmb tail (add lst2 (fst head) (snd head)))
+    untmb lst listik
+
+//3     //Репликация[2;3;4]2       //[2;2;3;3;4;4]
+let repl lst x =
+    let listik = lst
+    let rec iter lst i =
+        let rec add lst lst2 =
+            match lst2 with
+                |[] -> lst
+                |head::tail -> add(head::lst) tail
+        if i > 1 then iter (add lst listik) (i - 1)
+            else List.sort lst
+    iter lst x
+\\
+open System
+
+let sum a b = 
+    let lst = [a..b]
+    let func x = 
+        x % 3 = 0 || x % 5 = 0
+    let res = List.filter func lst
+    List.reduce(fun s i -> s + i) res;;
+
+let difference a b = 
+    let lst = [a..b]
+    let lst1 = List.map(fun i -> i * i)lst |> List.reduce(fun s i -> s + i)
+    let lst2 = List.reduce(fun s i -> s + i) lst
+    lst1 - (lst2 * lst2)
+
+let rec (!) x = 
+    if x <= 1 then
+        1
+    else x * !(x - 1)
+
+List.fold(+) 0 [1..1000]
+
+List.iter(printfn "%A") [1..100]
+
+let isOdd x =           //четное/нечетное
+    match x % 2 = 1 with
+    |true -> printfn "%A is not Odd" x 
+    |false -> printfn "%A in Odd" x
+
+let isVowel ch =                                //проверка символа
+    match ch with
+    |'a'|'e'|'n'|'y'|'o'|'q'
+                     -> true
+    |_ ->false
+
+//[1;2] @ [3;4]			//скрепление двух списков
+//5 :: [1;2]			//скрепление с элементом
+
+let rec proc lst =                              //проверка на пустоту списка, либо вывод его длины
+    match lst with
+    |[] -> 0
+    |xs :: tail -> 1 + (proc tail)
+
+let rec guess () =                              //угадай число
+    printfn "Угадай число"
+    let str = Console.ReadLine()
+    let num = Int32.Parse(str)
+    match num with
+    | _ when num > 735 -> 
+            printfn "Число меньше вашего"
+            guess()
+    | _ when num < 735 ->
+            printfn "Число больше вашего"
+            guess()
+    | _ when num = 735 ->
+            printfn "Угадал"
+            guess()
+guess()
+
+//проверка на пустоту списка, либо вывод его длины
+let rec lng lst =                              
+    match lst with
+    |[] -> 0
+    |xs :: tail -> 1 + (lng tail)
+
+let last lst = 
+    match lng lst - 1 with
+    |1 -> List.head(lst)
+    |_ -> last lst.Tail
+
+//i - ый элемент списка
+let rec search lst x = 
+    if x = 0 then
+                List.head(lst)
+    else search (lst.Tail) (x - 1)
+    
+//перестановка элементов
+let lstrev = []
+let rec reverse lst = 
+    last lst :: lstrev
+    reverse ()

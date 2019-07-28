@@ -1,0 +1,33 @@
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\SizeFolder.exe.config
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\SizeFolder.exe
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\SizeFolder.pdb
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\SizeFolderLibrary.dll
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\FSharp.Core.dll
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\SizeFolderLibrary.pdb
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\SizeFolderLibrary.xml
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\bin\Debug\FSharp.Core.xml
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\obj\Debug\SizeFolder.csprojResolveAssemblyReference.cache
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\obj\Debug\SizeFolder.Form1.resources
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\obj\Debug\SizeFolder.Properties.Resources.resources
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\obj\Debug\SizeFolder.csproj.GenerateResource.Cache
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\obj\Debug\SizeFolder.exe
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\Size_Folder\SizeFolder\SizeFolder\obj\Debug\SizeFolder.pdb
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\SizeFolder\SizeFolder\bin\Debug\SizeFolder.exe.config
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.exe
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.pdb
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\SizeFolder.exe.config
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\SizeFolder.exe
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\SizeFolder.pdb
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\SizeFolderLibrary.dll
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\FSharp.Core.dll
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\SizeFolderLibrary.pdb
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\SizeFolderLibrary.xml
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\bin\Debug\FSharp.Core.xml
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.csprojAssemblyReference.cache
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.Form1.resources
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.Properties.Resources.resources
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.csproj.GenerateResource.cache
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.csproj.CoreCompileInputs.cache
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.csproj.CopyComplete
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.exe
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\SizeFolder\SizeFolder\obj\Debug\SizeFolder.pdb

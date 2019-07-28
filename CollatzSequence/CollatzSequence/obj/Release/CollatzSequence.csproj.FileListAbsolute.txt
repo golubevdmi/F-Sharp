@@ -1,0 +1,11 @@
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Release\CollatzSequence.exe.config
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Release\CollatzSequence.exe
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Release\CollatzSequence.pdb
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Release\pk.dll
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Release\FSharp.Core.dll
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Release\FSharp.Core.xml
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Release\CollatzSequence.Form1.resources
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Release\CollatzSequence.Properties.Resources.resources
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Release\CollatzSequence.csproj.GenerateResource.Cache
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Release\CollatzSequence.exe
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Release\CollatzSequence.pdb

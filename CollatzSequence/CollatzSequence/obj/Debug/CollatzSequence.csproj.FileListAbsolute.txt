@@ -1,0 +1,26 @@
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\CollatzSequence.exe.config
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\CollatzSequence.exe
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\CollatzSequence.pdb
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\pk.dll
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\FSharp.Core.dll
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\FSharp.Core.xml
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.csprojResolveAssemblyReference.cache
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.Form1.resources
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.Properties.Resources.resources
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.csproj.GenerateResource.Cache
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.exe
+D:\Dropbox\Microsoft Visual Studio 2015\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.pdb
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\CollatzSequence.exe.config
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\CollatzSequence.exe
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\CollatzSequence.pdb
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\pk.dll
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\FSharp.Core.dll
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\bin\Debug\FSharp.Core.xml
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.csprojAssemblyReference.cache
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.Form1.resources
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.Properties.Resources.resources
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.csproj.GenerateResource.cache
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.csproj.CoreCompileInputs.cache
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.csproj.CopyComplete
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.exe
+D:\Dropbox\University\UNN\Программирование\ВМП(F#) (Штанюк А.А.)\Programs F#\CollatzSequence\CollatzSequence\obj\Debug\CollatzSequence.pdb
